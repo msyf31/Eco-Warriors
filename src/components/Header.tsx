@@ -46,22 +46,16 @@ function Header({ isSticky = true }: { isSticky?: boolean }) {
 									</div>
 									<ul className="centered-menu">
 										<li>
-											<a href="/" className="show-submenu">
-												Beranda
-											</a>
+											<Link to="/">Home</Link>
 										</li>
 										<li>
 											<Link to="/article">Article</Link>
 										</li>
 										<li>
-											<a href="/products" className="show-submenu">
-												Produk
-											</a>
+											<Link to="/products">Produk</Link>
 										</li>
 										<li>
-											<a href="/about" className="show-submenu">
-												Tentang
-											</a>
+											<Link to="/about">About</Link>
 										</li>
 									</ul>
 								</div>

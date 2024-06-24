@@ -31,11 +31,6 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<ul>
-				<li><Link to="/">Home</Link></li>
-				<li><Link to="/article">Article</Link></li>
-				<li><Link to="/about">About</Link></li>
-			</ul>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/login" Component={Login} />
