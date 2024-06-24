@@ -4,7 +4,6 @@ import About from './pages/About';
 import Article from './pages/Article';
 import Homepage from './pages/Homepage';
 import { Login } from './components/Login/Login';
-import Account from './components/Account/Account';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Products from './pages/Products';
@@ -35,9 +34,8 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/login" Component={Login} />
-				<Route path="/account" element={<Account/>} />
-				<Route path="/signin" element={<SignIn/>} />
-				<Route path="/signup" element={<SignUp/>} />
+				<Route path="/signin" element={<SignIn />} />
+				<Route path="/signup" element={<SignUp />} />
 				<Route path="article" element={<Article />} />
 				<Route path="products" element={<Products />} />
 				<Route path="products2" element={<Products2 />} />
@@ -48,9 +46,9 @@ function App() {
 				<Route path="detailartikel" element={<DetailArtikel />} />
 				<Route path="cart" element={<Cart />} />
 				<Route path="favorite" element={<Favorite />} />
-				<Route path="alatsekolah" element={<AlatSekolah/>} />
+				<Route path="alatsekolah" element={<AlatSekolah />} />
 				<Route path="souvenir" element={<Souvenir />} />
-				<Route path="hiasan" element={<Hiasan/>} />
+				<Route path="hiasan" element={<Hiasan />} />
 				<Route path="pupuk" element={<Pupuk />} />
 				{/* <Route path="edit/:id" element={<EditUser />} /> */}
 			</Routes>
