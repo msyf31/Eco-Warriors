@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import About from './pages/About';
 import Article from './pages/Article';
 import Homepage from './pages/Homepage';
@@ -31,6 +31,11 @@ function App() {
 
 	return (
 		<BrowserRouter>
+			<ul>
+				<li><Link to="/">Home</Link></li>
+				<li><Link to="/article">Article</Link></li>
+				<li><Link to="/about">About</Link></li>
+			</ul>
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/login" Component={Login} />
