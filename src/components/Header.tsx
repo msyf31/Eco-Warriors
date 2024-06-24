@@ -51,11 +51,7 @@ function Header({ isSticky = true }: { isSticky?: boolean }) {
 											</a>
 										</li>
 										<li>
-											<a
-												href="/article"
-												className="show-submenu-mega">
-												Edukasi
-											</a>
+											<Link to="/article">Article</Link>
 										</li>
 										<li>
 											<a href="/products" className="show-submenu">
